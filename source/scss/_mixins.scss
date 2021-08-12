@@ -22,6 +22,9 @@
 	text-transform: uppercase;
 	text-align: center;
 	z-index: 2;
+	@media (max-width: 768px) {
+		font-size: 35px;
+	}
 }
 
 @mixin label_white {
@@ -48,6 +51,9 @@
 	text-transform: uppercase;
 	text-align: center;
 	z-index: 2;
+	@media (max-width: 768px) {
+		font-size: 35px;
+	}
 }
 @mixin btn_hover {
 	&:hover {

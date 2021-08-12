@@ -13,6 +13,9 @@
 		@media (max-width: 1200px) {
 			font-size: 50px;
 		}
+		@media (max-width: 1200px) {
+			font-size: 40px;
+		}
 	}
 
 	&__subheader {
@@ -23,6 +26,9 @@
 		text-transform: uppercase;
 		line-height: 36px;
 		margin: 14px 0 23px 0;
+		@media (max-width: 1200px) {
+			font-size: 30px;
+		}
 	}
 
 	&__descr {

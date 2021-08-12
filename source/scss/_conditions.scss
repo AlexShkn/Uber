@@ -54,6 +54,10 @@
 	&__descr {
 		color: $main-color;
 		font-weight: 300;
+		font-size: 17px;
+		@media (max-width: 768px) {
+			font-size: 12px;
+		}
 	}
 }
 .red {
