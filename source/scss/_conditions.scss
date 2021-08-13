@@ -2,16 +2,23 @@
 	padding: 68px 0px 84px 0px;
 	position: relative;
 	z-index: 0;
+	@media (max-width: 575px) {
+		padding: 25px 0 33px 0;
+	}
+
 	&__label {
 		@include label_dark;
 	}
 
 	&__title {
 		@include title-dark;
+		@media (max-width: 575px) {
+			font-size: 22px;
+		}
 	}
 	&__block {
 		max-width: 478px;
-		margin: 33px 0 33px 0;
+		margin: 20px 0 20px 0;
 	}
 	&__block-nmb {
 		margin-bottom: 0px;
@@ -21,6 +28,9 @@
 		color: #1ca8c3;
 		font-size: 22px;
 		font-weight: 400;
+		@media (max-width: 575px) {
+			font-size: 18px;
+		}
 	}
 	&__subtitle-upper {
 		text-transform: uppercase;
@@ -29,6 +39,9 @@
 		list-style-type: none;
 		padding-left: 50px;
 		margin-top: 22px;
+		@media (max-width: 575px) {
+			margin-top: 5px;
+		}
 	}
 
 	&__item {
@@ -48,6 +61,14 @@
 			height: 20px;
 			background: url('/img/Сonditions/chek_blue1.png') center center/cover
 				no-repeat;
+			@media (max-width: 575px) {
+				top: -3px;
+			}
+		}
+		@media (max-width: 575px) {
+			margin-bottom: 6px;
+			line-height: 15px;
+			font-size: 13px;
 		}
 	}
 
@@ -60,6 +81,12 @@
 		}
 		@media (max-width: 991px) {
 			font-size: 12px;
+		}
+		@media (max-width: 575px) {
+			br {
+				display: none;
+			}
+			font-size: 13px;
 		}
 	}
 }

@@ -26,7 +26,7 @@ nav {
 		width: 50%;
 		height: 100vh;
 		padding: 20px 15px;
-		background-color: rgba(0, 0, 0, 0.8);
+		background-color: rgba(0, 0, 0, 0.9);
 		transition: 0.6s all;
 	}
 	&__active {
@@ -46,6 +46,7 @@ nav {
 			padding-right: 0;
 			margin-bottom: 20px;
 			border: none;
+			text-align: center;
 		}
 	}
 	&__item:last-child {
@@ -113,6 +114,9 @@ nav {
 	background-color: rgba(0, 0, 0, 0.6);
 	position: absolute;
 	width: 100%;
+	@media (max-width: 575px) {
+		height: 60px;
+	}
 
 	&__logo {
 		display: block;
@@ -121,6 +125,9 @@ nav {
 		img {
 			@media (max-width: 991px) {
 				width: 100%;
+			}
+			@media (max-width: 575px) {
+				margin-top: 10px;
 			}
 		}
 	}
@@ -133,6 +140,9 @@ nav {
 		font-weight: 400;
 		@media (max-width: 991px) {
 			font-size: 11px;
+		}
+		@media (max-width: 575px) {
+			display: none;
 		}
 	}
 
@@ -168,8 +178,11 @@ nav {
 		@media (max-width: 767px) {
 			margin-top: 10px;
 			font-size: 20px;
-			font-weight: 400;
-			text-transform: uppercase;
+			text-align: center;
+		}
+		@media (max-width: 575px) {
+			font-size: 14px;
+			margin-top: 10px;
 			text-align: center;
 		}
 	}
@@ -196,6 +209,14 @@ nav {
 			height: 40px;
 			margin: 0 auto;
 			margin-top: 5px;
+		}
+		@media (max-width: 575px) {
+			margin-top: 8px;
+			margin-bottom: 10px;
+			margin-right: 20px;
+			width: 140px;
+			height: 22px;
+			font-size: 12px;
 		}
 	}
 }

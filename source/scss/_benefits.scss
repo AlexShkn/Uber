@@ -2,6 +2,9 @@
 	padding: 71px 0 65px 0;
 	position: relative;
 	z-index: 0;
+	@media (max-width: 575px) {
+		padding: 20px 0 40px 0;
+	}
 
 	&__label {
 		@include label_dark;
@@ -9,6 +12,10 @@
 
 	&__title {
 		@include title-dark;
+		@media (max-width: 575px) {
+			margin-top: 16px;
+			font-size: 15px;
+		}
 	}
 
 	&__block {
@@ -22,6 +29,9 @@
 		@media (max-width: 768px) {
 			flex-direction: column;
 			align-items: center;
+		}
+		@media (max-width: 575px) {
+			margin-top: 25px;
 		}
 	}
 
@@ -37,12 +47,18 @@
 		@media (max-width: 768px) {
 			margin-bottom: 20px;
 		}
+		@media (max-width: 575px) {
+			margin: 0;
+		}
 	}
 
 	&__descr {
 		width: 343px;
 		@media (max-width: 1200px) {
-			width: 300px;
+			max-width: 300px;
+		}
+		@media (max-width: 575px) {
+			margin: 12px 15px 0 15px;
 		}
 	}
 

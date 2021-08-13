@@ -2,6 +2,10 @@
 	min-height: 800px;
 	background: url('../img/first_bg.png') center center/cover no-repeat;
 	padding: 150px 0 135px 0;
+	@media (max-width: 575px) {
+		min-height: 340px;
+		padding: 100px 0 35px 0;
+	}
 
 	&__header {
 		color: #ffffff;
@@ -20,6 +24,9 @@
 			font-size: 40px;
 			line-height: 45px;
 		}
+		@media (max-width: 575px) {
+			font-size: 30px;
+		}
 	}
 
 	&__subheader {
@@ -36,6 +43,9 @@
 		@media (max-width: 767px) {
 			font-size: 25px;
 		}
+		@media (max-width: 575px) {
+			font-size: 20px;
+		}
 	}
 
 	&__descr {
@@ -44,6 +54,9 @@
 		font-weight: 400;
 		line-height: 24px;
 		text-align: center;
+		@media (max-width: 575px) {
+			display: none;
+		}
 	}
 
 	&__btn {
@@ -63,5 +76,8 @@
 		text-transform: uppercase;
 		transition: 0.5s all;
 		@include btn_hover;
+		@media (max-width: 575px) {
+			margin: 75px auto 0 auto;
+		}
 	}
 }

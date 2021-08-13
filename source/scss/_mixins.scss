@@ -25,6 +25,7 @@
 	@media (max-width: 768px) {
 		font-size: 35px;
 	}
+	margin-top: 16px;
 }
 
 @mixin label_white {
@@ -40,6 +41,8 @@
 	font-weight: 300;
 	text-transform: uppercase;
 	z-index: 2;
+	@media (max-width: 575px) {
+	}
 }
 @mixin title-white {
 	position: relative;
@@ -55,6 +58,7 @@
 		font-size: 35px;
 	}
 }
+
 @mixin btn_hover {
 	&:hover {
 		background-image: none;
