@@ -25,7 +25,8 @@
 			line-height: 45px;
 		}
 		@media (max-width: 575px) {
-			font-size: 30px;
+			font-size: 26px;
+			padding: 0 40px 0 40px;
 		}
 	}
 
@@ -44,7 +45,8 @@
 			font-size: 25px;
 		}
 		@media (max-width: 575px) {
-			font-size: 20px;
+			padding: 0 25px 0 29px;
+			font-size: 17px;
 		}
 	}
 
@@ -76,6 +78,11 @@
 		text-transform: uppercase;
 		transition: 0.5s all;
 		@include btn_hover;
+		@media (max-width: 767px) {
+			&:hover {
+				background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+			}
+		}
 		@media (max-width: 575px) {
 			margin: 75px auto 0 auto;
 		}
