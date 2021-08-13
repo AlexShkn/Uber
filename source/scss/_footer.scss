@@ -27,13 +27,16 @@
 	&__wrapper-social {
 		display: flex;
 		justify-content: flex-start;
+		padding-left: 26px;
 		@media (max-width: 768px) {
 			order: 2;
 			justify-content: center;
+			padding-left: 0;
 		}
 		@media (max-width: 575px) {
 			order: 2;
 			justify-content: center;
+			padding-left: 0;
 		}
 	}
 	&__wrapper-nav {
@@ -114,12 +117,12 @@
 		justify-content: space-around;
 		padding: 11px 0 20px 0;
 		@media (max-width: 991px) {
+			flex-wrap: wrap;
 			font-size: 10px;
 			padding-right: 5px;
 		}
 		@media (max-width: 575px) {
 			flex-wrap: wrap;
-			// justify-content: center;
 			padding: 10px 30px;
 			a {
 				margin: 0 7px;
